@@ -19,7 +19,7 @@
 		</h2>
 		<div class="w-full md:w-1/3 flex md:justify-end z-10">
 			<a
-				href="mailto:hello@techagency.com"
+				href="tel:+998909663440"
 				class="group relative flex items-center justify-center w-40 h-40 md:w-48 md:h-48 rounded-full bg-white text-black hover:scale-105 transition-transform duration-500 cursor-pointer"
 			>
 				<span
@@ -107,24 +107,17 @@
 			<h4
 				class="font-mono text-xs uppercase tracking-widest text-[#3B82F6] mb-2"
 			>
-				Newsletter
+				Contact
 			</h4>
-			<p class="text-white/40 font-sans text-sm">
-				Join our newsletter for insights on WebGL, Svelte, and design
-				engineering.
+			<a
+				href="tel:+998909663440"
+				class="text-white/80 hover:text-white font-sans text-lg font-medium transition-colors"
+			>
+				+998 90 966 34 40
+			</a>
+			<p class="text-white/40 font-sans text-sm mt-2">
+				Call us for a free consultation. We're available Mon-Fri, 9AM-6PM.
 			</p>
-			<div class="mt-2 flex w-full relative">
-				<input
-					type="email"
-					placeholder="Enter your email"
-					class="w-full bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm text-white focus:outline-none focus:border-white/40 transition-colors"
-				/>
-				<button
-					class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-[#3B82F6] hover:text-white transition-colors"
-				>
-					&rarr;
-				</button>
-			</div>
 		</div>
 	</div>
 

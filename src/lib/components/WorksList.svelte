@@ -2,27 +2,24 @@
 	const works = [
 		{
 			id: "01",
-			name: "TechFlow",
-			category: "E-Commerce Platform",
+			name: "AIWardrobe",
+			category: "iOS App",
 			year: "2025",
+			url: "https://apps.apple.com/uz/app/aiwardrobe/id6761912806",
 		},
 		{
 			id: "02",
-			name: "PixelForge",
-			category: "Interactive Dashboard",
-			year: "2024",
+			name: "Zenyth.AI",
+			category: "iOS App",
+			year: "2025",
+			url: "https://apps.apple.com/uz/app/zenyth-ai/id6759964271",
 		},
 		{
 			id: "03",
-			name: "CloudScape",
-			category: "SaaS Application",
-			year: "2024",
-		},
-		{
-			id: "04",
-			name: "DevKit Pro",
-			category: "Developer Tools",
-			year: "2023",
+			name: "SundS",
+			category: "E-Commerce Website",
+			year: "2025",
+			url: "https://fiorenticouture.vercel.app/",
 		},
 	];
 </script>
@@ -52,14 +49,16 @@
 		>
 			<div class="w-16">ID</div>
 			<div class="flex-1">Project</div>
-			<div class="hidden md:block w-1/3">Role</div>
+			<div class="hidden md:block w-1/3">Category</div>
 			<div class="w-16 text-right">Year</div>
 		</div>
 
 		<!-- Table Rows -->
 		{#each works as work}
 			<a
-				href="/"
+				href={work.url}
+				target="_blank"
+				rel="noopener noreferrer"
 				class="group flex items-center border-b border-white/10 py-8 md:py-12 px-4 hover:bg-white/5 transition-colors duration-500 cursor-pointer relative overflow-hidden"
 			>
 				<div
@@ -92,11 +91,12 @@
 		{/each}
 
 		<div class="mt-16 flex justify-center w-full">
-			<button
-				class="px-8 py-3 rounded-full border border-white/20 text-white/80 hover:bg-white hover:text-black transition-colors duration-500 font-sans cursor-pointer text-sm font-medium"
+			<a
+				href="#contact"
+				class="px-8 py-3 rounded-full border border-white/20 text-white/80 hover:bg-white hover:text-black transition-colors duration-500 font-sans cursor-pointer text-sm font-medium inline-block"
 			>
-				View All Archives
-			</button>
+				Start Your Project
+			</a>
 		</div>
 	</div>
 </section>
