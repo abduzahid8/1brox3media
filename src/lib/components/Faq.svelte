@@ -2,25 +2,9 @@
 	import Plus from "@lucide/svelte/icons/plus";
 	import Minus from "@lucide/svelte/icons/minus";
 	import { slide } from "svelte/transition";
+	import { t } from "$lib/i18n/index.svelte.js";
 
-	const faqs = [
-		{
-			q: "What is your typical project timeline?",
-			a: "Most of our web experiences take between 6 to 8 weeks from concept to deployment. Enterprise platforms and complex applications may require up to 4 months.",
-		},
-		{
-			q: "What technologies do you use?",
-			a: "We are framework-agnostic and work with Svelte, Next.js, Vue, React, and various backend technologies depending on project requirements.",
-		},
-		{
-			q: "How does your pricing work?",
-			a: "We operate on milestone-based pricing for fixed-scope projects. For ongoing product development, we offer dedicated team retainers. Every project receives a custom quotation based on scope complexity.",
-		},
-		{
-			q: "Do you offer ongoing support?",
-			a: "Absolutely. We provide maintenance and support packages to ensure your project remains up-to-date, secure, and performing at its best long after launch.",
-		},
-	];
+	const faqs = t("faq.items");
 
 	let activeIndex = $state(null);
 
@@ -48,22 +32,21 @@
 		<div class="w-full md:w-1/3">
 			<span
 				class="text-sm font-mono text-white/50 uppercase tracking-widest mb-6 block"
-				>FAQ</span
+				>{t("faq.label")}</span
 			>
 			<h2 class="text-4xl md:text-5xl font-serif leading-tight">
-				Frequently<br />
-				<span class="italic text-white/40">Asked</span>
+				{t("faq.title")}<br />
+				<span class="italic text-white/40">{t("faq.title_italic")}</span>
 			</h2>
 			<p class="text-white/50 mt-6 font-sans font-light">
-				Answers to the most common questions regarding our process,
-				technology stack, and partnership models.
+				{t("faq.description")}
 			</p>
 
 			<a
 				href="#contact"
 				class="inline-flex items-center gap-2 mt-8 text-sm font-mono text-white/80 uppercase hover:text-white transition-colors group"
 			>
-				Still have questions?
+				{t("faq.still_questions")}
 				<span
 					class="w-8 h-[1px] bg-white transform origin-left transition-transform duration-300 group-hover:scale-x-150"
 				></span>

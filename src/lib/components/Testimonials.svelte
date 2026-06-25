@@ -1,24 +1,9 @@
 <script>
 	import { onMount, onDestroy } from "svelte";
 	import gsap from "gsap";
+	import { t } from "$lib/i18n/index.svelte.js";
 
-	const feedbacks = [
-		{
-			name: "Sarah Jenkins",
-			role: "CMO, TechFlow",
-			text: "techagency didn't just build a website; they architected a digital reality. Their mastery and craftsmanship are unmatched.",
-		},
-		{
-			name: "Marcus Thorne",
-			role: "Founder, PixelForge",
-			text: "Working with them felt like collaborating with a future version of ourselves. Uncompromising quality and relentless execution.",
-		},
-		{
-			name: "Elena Rostova",
-			role: "Product VP, CloudScape",
-			text: "They completely redefined our brand identity. Client conversion and engagement skyrocketed immediately after the overhaul.",
-		},
-	];
+	const feedbacks = t("testimonials.list");
 
 	let currentIndex = $state(0);
 	let quoteRef = $state();
@@ -85,7 +70,7 @@
 	>
 		<span
 			class="text-xs font-mono text-white/30 uppercase tracking-widest mb-16"
-			>Client Voices</span
+			>{t("testimonials.label")}</span
 		>
 
 		<h3

@@ -1,4 +1,6 @@
 <script>
+	import { t } from "$lib/i18n/index.svelte.js";
+
 	const works = [
 		{
 			id: "01",
@@ -32,13 +34,12 @@
 		class="px-6 md:px-24 mb-24 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-6"
 	>
 		<h2 class="text-5xl md:text-8xl font-serif tracking-tight">
-			Selected<br /><span class="italic text-white/40">Works.</span>
+			{t("works.title")}<br /><span class="italic text-white/40">{t("works.title_italic")}</span>
 		</h2>
 		<p
 			class="text-white/50 font-sans max-w-sm text-lg leading-relaxed pb-2"
 		>
-			A curation of highly immersive projects pushing digital boundaries.
-			Hover to reveal more.
+			{t("works.description")}
 		</p>
 	</div>
 
@@ -47,10 +48,10 @@
 		<div
 			class="flex border-b border-white/20 pb-4 mb-4 text-xs font-mono text-white/40 uppercase tracking-widest px-4"
 		>
-			<div class="w-16">ID</div>
-			<div class="flex-1">Project</div>
-			<div class="hidden md:block w-1/3">Category</div>
-			<div class="w-16 text-right">Year</div>
+			<div class="w-16">{t("works.col_id")}</div>
+			<div class="flex-1">{t("works.col_project")}</div>
+			<div class="hidden md:block w-1/3">{t("works.col_category")}</div>
+			<div class="w-16 text-right">{t("works.col_year")}</div>
 		</div>
 
 		<!-- Table Rows -->
@@ -95,7 +96,7 @@
 				href="#contact"
 				class="px-8 py-3 rounded-full border border-white/20 text-white/80 hover:bg-white hover:text-black transition-colors duration-500 font-sans cursor-pointer text-sm font-medium inline-block"
 			>
-				Start Your Project
+				{t("works.cta")}
 			</a>
 		</div>
 	</div>

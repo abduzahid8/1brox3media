@@ -2,24 +2,9 @@
 	import { onMount } from "svelte";
 	import gsap from "gsap";
 	import ScrollTrigger from "gsap/ScrollTrigger";
+	import { t } from "$lib/i18n/index.svelte.js";
 
-	const services = [
-		{
-			title: "Web Development",
-			desc: "Building high-performance web applications using modern frameworks like Svelte, Next.js, and Vue.",
-			icon: "M13 10V3L4 14h7v8l9-11h-7z",
-		},
-		{
-			title: "UI/UX Design",
-			desc: "Crafting intuitive user interfaces and seamless experiences that delight users and drive engagement.",
-			icon: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5",
-		},
-		{
-			title: "Brand Identity",
-			desc: "Developing distinctive brand identities that communicate your vision and resonate with your audience.",
-			icon: "M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z",
-		},
-	];
+	const services = t("showcase.services");
 
 	let gridRef = $state();
 
@@ -60,7 +45,7 @@
 	>
 		<span
 			class="text-xs font-mono text-white/30 uppercase tracking-widest mb-16 text-center tracking-[0.3em]"
-			>Our Core Disciplines</span
+			>{t("showcase.label")}</span
 		>
 
 		<div

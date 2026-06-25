@@ -1,6 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import gsap from "gsap";
+    import { t } from "$lib/i18n/index.svelte.js";
 
     let words = $state([]);
     let descRef = $state();
@@ -112,7 +113,7 @@
                     bind:this={words[0]}
                     class="flex items-center pt-4 will-change-transform"
                 >
-                    techagency
+                    {t("hero.title")}
                 </div>
             </div>
             <div class="overflow-hidden pb-8 -mb-8">
@@ -121,8 +122,8 @@
                     class="flex items-center md:gap-6 will-change-transform pt-4"
                 >
                     <span class="italic text-white/50 mr-3 md:mr-6 font-serif"
-                        >digital</span
-                    > experiences.
+                        >{t("hero.digital")}</span
+                    > {t("hero.experiences")}
                 </div>
             </div>
         </h1>
@@ -131,8 +132,7 @@
             bind:this={descRef}
             class="text-lg md:text-2xl text-white/50 max-w-3xl mt-12 md:mt-8 font-sans font-light leading-relaxed mix-blend-difference px-4"
         >
-            Pushing the boundaries of immersive web experiences, motion design,
-            and digital reality for ambitious global brands.
+            {t("hero.description")}
         </p>
 
         <div bind:this={ctaContainer} class="mt-8 flex gap-4 z-20">
@@ -140,13 +140,13 @@
                 href="#work"
                 class="px-8 py-4 bg-white text-black rounded-full font-sans font-medium hover:bg-[#3B82F6] hover:text-white transition-all duration-500 cursor-pointer shadow-[0_0_40px_rgba(255,255,255,0.15)] inline-block"
             >
-                View Our Work
+                {t("hero.view_work")}
             </a>
             <a
                 href="#services"
                 class="hidden md:inline-block px-8 py-4 bg-transparent text-white border border-white/20 rounded-full font-sans font-medium hover:bg-[#3B82F6] hover:border-[#3B82F6] transition-all duration-500 cursor-pointer"
             >
-                Our Services
+                {t("hero.our_services")}
             </a>
         </div>
     </div>

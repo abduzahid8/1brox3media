@@ -2,9 +2,9 @@
 	import { onMount } from "svelte";
 	import gsap from "gsap";
 	import ScrollTrigger from "gsap/ScrollTrigger";
+	import { t } from "$lib/i18n/index.svelte.js";
 
-	const paragraph =
-		"We believe the digital realm should not be a static canvas, but an immersive reality. We architect uncompromised experiences that redefine the boundaries of human interaction, blending cutting-edge engineering precision with unapologetic visual design.";
+	const paragraph = t("manifesto.text");
 	const words = paragraph.split(" ");
 
 	let manifestoRef = $state();
@@ -35,7 +35,7 @@
 >
 	<span
 		class="text-xs font-mono text-white/30 uppercase tracking-widest mb-16 text-center"
-		>Manifesto</span
+		>{t("manifesto.label")}</span
 	>
 
 	<p

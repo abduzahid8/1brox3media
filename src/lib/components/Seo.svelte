@@ -1,7 +1,9 @@
 <script>
+	import { t } from "$lib/i18n/index.svelte.js";
+
 	let {
-		title = "techagency — Independent Creative Agency",
-		description = "A globally awarded creative agency specializing in immersive web experiences, fluid motion design, and digital reality using SvelteKit & GSAP.",
+		title = t("seo.title"),
+		description = t("seo.description"),
 		url = "https://techagency.vercel.app",
 		image = "/og-image.png",
 	} = $props();

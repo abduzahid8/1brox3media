@@ -5,6 +5,7 @@
     import Logo from "./logo.svelte";
     import Menu from "@lucide/svelte/icons/menu";
     import X from "@lucide/svelte/icons/x";
+    import { t } from "$lib/i18n/index.svelte.js";
 
     let headerRef = $state();
     let navItemsRef = $state([]);
@@ -156,21 +157,21 @@
                 <a
                     href="#work"
                     onclick={(e) => scrollTo(e, "#work")}
-                    class="hover:text-white transition-colors">Work</a
+                    class="hover:text-white transition-colors">{t("nav.work")}</a
                 >
             </li>
             <li bind:this={navItemsRef[1]}>
                 <a
                     href="#services"
                     onclick={(e) => scrollTo(e, "#services")}
-                    class="hover:text-white transition-colors">Services</a
+                    class="hover:text-white transition-colors">{t("nav.services")}</a
                 >
             </li>
             <li bind:this={navItemsRef[2]}>
                 <a
                     href="#agency"
                     onclick={(e) => scrollTo(e, "#agency")}
-                    class="hover:text-white transition-colors">Agency</a
+                    class="hover:text-white transition-colors">{t("nav.agency")}</a
                 >
             </li>
         </ul>
@@ -185,7 +186,7 @@
             href="#contact"
             onclick={(e) => scrollTo(e, "#contact")}
             class="hidden md:flex items-center justify-center text-sm font-medium bg-white text-black hover:bg-white/80 transition-colors px-6 py-2 rounded-full"
-            >Let's Talk</a
+            >{t("nav.lets_talk")}</a
         >
         <button
             onclick={toggleMenu}
@@ -217,7 +218,7 @@
                 href="#work"
                 onclick={(e) => scrollTo(e, "#work")}
                 class="block text-4xl font-sans font-light text-white/80 hover:text-white transition-colors will-change-transform"
-                >Work</a
+                >{t("nav.work")}</a
             >
         </li>
         <li class="overflow-hidden">
@@ -226,7 +227,7 @@
                 href="#services"
                 onclick={(e) => scrollTo(e, "#services")}
                 class="block text-4xl font-sans font-light text-white/80 hover:text-white transition-colors will-change-transform"
-                >Services</a
+                >{t("nav.services")}</a
             >
         </li>
         <li class="overflow-hidden">
@@ -235,7 +236,7 @@
                 href="#agency"
                 onclick={(e) => scrollTo(e, "#agency")}
                 class="block text-4xl font-sans font-light text-white/80 hover:text-white transition-colors will-change-transform"
-                >Agency</a
+                >{t("nav.agency")}</a
             >
         </li>
         <li class="overflow-hidden mt-6 pt-8 border-t border-white/10">
@@ -244,7 +245,7 @@
                 href="#contact"
                 onclick={(e) => scrollTo(e, "#contact")}
                 class="inline-block text-xl font-sans text-white hover:text-white/80 transition-colors will-change-transform"
-                >Let's talk &rarr;</a
+                >{t("nav.lets_talk_mobile")}</a
             >
         </li>
     </ul>
@@ -252,8 +253,8 @@
     <div
         class="absolute bottom-10 left-10 flex gap-6 text-xs font-mono text-white/40 uppercase tracking-widest relative z-10"
     >
-        <a href="https://twitter.com">Twitter</a>
-        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://twitter.com">{t("social.twitter")}</a>
+        <a href="https://linkedin.com">{t("social.linkedin")}</a>
     </div>
 </div>
 

@@ -2,15 +2,11 @@
 	import { onMount } from "svelte";
 	import gsap from "gsap";
 	import ScrollTrigger from "gsap/ScrollTrigger";
+	import { t } from "$lib/i18n/index.svelte.js";
 
 	let statsRef = $state();
 
-	const stats = [
-		{ label: "Value Created", limit: 200, suffix: "M+", prefix: "$" },
-		{ label: "Global Awards", limit: 45, suffix: "+", prefix: "" },
-		{ label: "Sprint Cycles", limit: 60, suffix: " Days", prefix: "<" },
-		{ label: "Partner Brands", limit: 120, suffix: "+", prefix: "" },
-	];
+	const stats = t("stats.items");
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);

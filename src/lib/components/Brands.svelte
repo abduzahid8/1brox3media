@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from "svelte";
 	import gsap from "gsap";
+	import { t } from "$lib/i18n/index.svelte.js";
 
 	let rowRef = $state();
 
@@ -49,7 +50,7 @@
 	<p
 		class="text-xs font-mono text-white/30 uppercase tracking-widest mb-10 text-center relative z-20"
 	>
-		We collaborate with forward-thinking teams
+		{t("brands.subtitle")}
 	</p>
 
 	<!-- Endless Marquee Wrapper -->
