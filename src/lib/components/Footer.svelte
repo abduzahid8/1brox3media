@@ -95,7 +95,7 @@
 				>{t("footer.social_linkedin")}</a
 			>
 			<a
-				href="https://github.com/techagency"
+				href="https://github.com/1brox3"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="text-[#3B82F6] hover:text-white font-sans text-sm transition-colors"
@@ -130,7 +130,7 @@
 		<div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
 			<span class="text-white/50 text-sm font-sans font-light">
 				{t("footer.built_by")} <a
-					href="https://techagency.com"
+					href="https://1brox3.com"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="text-[#3B82F6] font-medium hover:text-white transition-colors duration-500 hover:underline underline-offset-4"

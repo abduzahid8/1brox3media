@@ -11,7 +11,7 @@ export default {
     linkedin: "LinkedIn",
   },
   hero: {
-    title: "techagency",
+    title: "1brox3",
     digital: "digital",
     experiences: "experiences.",
     description:
@@ -63,7 +63,7 @@ export default {
       {
         name: "Sarah Jenkins",
         role: "CMO, TechFlow",
-        text: "techagency didn't just build a website; they architected a digital reality. Their mastery and craftsmanship are unmatched.",
+        text: "1brox3 didn't just build a website; they architected a digital reality. Their mastery and craftsmanship are unmatched.",
       },
       {
         name: "Marcus Thorne",
@@ -130,14 +130,14 @@ export default {
     contact_title: "Contact",
     contact_hours:
       "Call us for a free consultation. We're available Mon-Fri, 9AM-6PM.",
-    copyright: "© 2026 techagency.",
+    copyright: "© 2026 1brox3.",
     built_by: "Built by",
     privacy: "Privacy Policy",
     terms: "Terms of Service",
-    built_by_agency: "techagency",
+    built_by_agency: "1brox3",
   },
   seo: {
-    title: "techagency — Independent Creative Agency",
+    title: "1brox3 — Independent Creative Agency",
     description:
       "A globally awarded creative agency specializing in immersive web experiences, fluid motion design, and digital reality using SvelteKit & GSAP.",
   },

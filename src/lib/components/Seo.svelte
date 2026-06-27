@@ -4,7 +4,7 @@
 	let {
 		title = t("seo.title"),
 		description = t("seo.description"),
-		url = "https://techagency.vercel.app",
+		url = "https://1brox3.vercel.app",
 		image = "/og-image.png",
 	} = $props();
 </script>
@@ -16,7 +16,7 @@
 	<meta name="description" content={description} />
 	<meta name="robots" content="index, follow" />
 	<meta name="theme-color" content="#050505" />
-	<meta name="author" content="techagency" />
+	<meta name="author" content="1brox3" />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />

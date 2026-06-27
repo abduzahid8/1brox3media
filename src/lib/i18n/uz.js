@@ -11,7 +11,7 @@ export default {
     linkedin: "LinkedIn",
   },
   hero: {
-    title: "techagency",
+    title: "1brox3",
     digital: "raqamli",
     experiences: "tajribalar.",
     description:
@@ -63,7 +63,7 @@ export default {
       {
         name: "Sarora Kenjayeva",
         role: "CMO, TechFlow",
-        text: "techagency shunchaki veb-sayt yaratmadi, ular raqamli haqiqatni arxitektura qildi. Ustalik va mahorat mislsiz.",
+        text: "1brox3 shunchaki veb-sayt yaratmadi, ular raqamli haqiqatni arxitektura qildi. Ustalik va mahorat mislsiz.",
       },
       {
         name: "Rustam Karimov",
@@ -129,14 +129,14 @@ export default {
     social_github: "GitHub",
     contact_title: "Aloqa",
     contact_hours: "Bepul maslahat uchun qo'ng'iroq qiling. Ish vaqti: Dush-Juma, 9:00-18:00.",
-    copyright: "© 2026 techagency.",
+    copyright: "© 2026 1brox3.",
     built_by: "Yaratgan",
     privacy: "Maxfiylik Siyosati",
     terms: "Foydalanish Shartlari",
-    built_by_agency: "techagency",
+    built_by_agency: "1brox3",
   },
   seo: {
-    title: "techagency — Mustaqil Kreativ Agentlik",
+    title: "1brox3 — Mustaqil Kreativ Agentlik",
     description:
       "SvelteKit va GSAP yordamida immersiv veb-tajribalar, fluid motion dizayn va raqamli haqiqatga ixtisoslashgan global mukofotli kreativ agentlik.",
   },
