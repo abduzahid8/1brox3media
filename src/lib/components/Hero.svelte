@@ -89,11 +89,14 @@
         bind:this={bgRef}
         class="absolute inset-0 z-0 pointer-events-none will-change-transform"
     >
-        <img
-            src="/ascii-art.gif"
-            alt="Ascii art background"
+        <video
+            src="/Saturn_orbiting_in_space_202606271424.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
             class="w-full h-screen object-cover mix-blend-screen opacity-[0.65] block"
-        />
+        ></video>
         <div
             class="absolute inset-0 bg-linear-to-b from-[#050505]/40 via-[#050505]/10 to-[#050505]"
         ></div>
